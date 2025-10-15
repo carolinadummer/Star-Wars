@@ -1,0 +1,117 @@
+body {
+    /* Define uma imagem como plano de fundo */
+    background-image: url("img/space.jpg");
+    /* Faz a imagem ocupar todo o espaço da tela */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#site {
+    /* Ocupa 50% da largura da tela */
+    width: 50%;
+    /* Centraliza a DIV no meio da página */
+    text-align: center;
+    margin: 0 auto;
+    /* Altera a cor de fundo */
+    background-color: black;
+    /* Altera a cor da fonte */
+    color: white;
+}
+#cabecalho {
+    background-image: url("img/header.jpg");
+    /* Faz a imagem ocupar todo o espaço da DIV #cabecalho */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* Centraliza a imagem verticalmente */
+    background-position-y: center;
+    /* Define a altura do cabeçalho */
+    height: 220px;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+#menu ul li {
+    /* Remove a bolotinha da lista */
+    list-style-type: none;
+    background-color: black;
+    /* Faz os itens da lista ficarem lado-a-lado */
+    float: left;
+    /* Como temos 5 itens, faz cada item ocupar 20% da largura do menu, totalizando 100% */
+    width: 20%;
+    /* Aumenta o espaçamento vertical dos itens de menu */
+    padding: 5px 0;
+    
+} 
+#menu ul li:hover {
+    /* Altera a cor de fundo ao passar o mouse sob o item de menu */
+    background-color: #2e2e2e;
+    /* Adiciona efeito de transição durante a troca de cor de fundo do item de menu */
+    transition: background-color 1s;
+}
+#menu ul li a {
+    /* Altera a cor dos links para gold */
+    color: gold;
+    /* Remove o sublinhado */
+    text-decoration: none;
+    /* Aumenta o tamanho da fonte */
+    font-size: 25px;
+    /* Torna o link clicável em qualquer espaço dentro do item de menu */
+    display: block;
+}
+#artigo {
+    /* Aumenta o espaçamento do texto entre as laterais do #site */
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#imagens {
+    /* Aumenta o espaçamento no rodapé (abaixo) as imagens */
+    padding-bottom: 25px;
+}
+#imagens img {
+/* Diminui a largura das imagens para 30% da largura cada, totalizando 90% da largura total da DIV #site */
+width: 30%;
+/* Alinha as imagens verticalmente */
+vertical-align: middle;
+}
+#imagens a {
+    /* Aumenta o espaçamento horizontal entre as fotos */
+padding-right: 25px;
+}
+#imagens a:last-child {
+    /* Remove o espaçamento á direita da última imagem */
+    padding-right: 0;
+}
+p {
+    /* Justifica o texto, ou seja, ele sempre começa e inicia o texto no mesmo lugar, ocupando todo o tamanho da DIV ARTIGO. */
+    text-align: justify;
+    /* Adiciona "espaço" ao início de cada parágrafo */
+    text-indent: 50px;
+    font-family:  "Cinzel", serif;
+    color: white;
+  }
+  #zoom-texto {
+    /* Alinha a caixa de zoom do texto á direita da DIV ARTIGO. */
+    text-align: right;
+    /* Cria espaço entre os botões de zoom e a imagem de título */
+    margin-bottom: 25px;
+  }
+  button {
+    /* Altera a cor de fundo e a borda para a cor selecionada */
+    background-color: black;
+    border: 1px solid gold;
+    /* Altera a cor do texto do botão (A+, A-) para a cor selecionada */
+    color: gold;
+    /*Deixa o botão redondo */
+    border-radius: 5px;
+    /* Aumenta o espaçamento (largura e altura) do botão */
+    padding: 5px;
+    
+  }
+  /* Aplica CSS ao passar o mouse (hover) sob o botão */
+  button:hover {
+    /* Altera a cor de fundo do botão */
+    background-color: rgb(44, 44, 44);
+    border: 1px solid gold;
+    /* Altera o ícone do ponteiro do mouse */
+    cursor: pointer;
+  }
